@@ -31,6 +31,7 @@ def lineplt(y_axis, Country1, Country2, Country3, Country4):
     #plt.xlim(2000,2020)
     plt.ylabel("Gold Price in USD")
     plt.legend()
+    plt.savefig("lineplt.png")
     plt.show()
 
 def hist(y_axis, Country1, Country2, Country3, Country4):
@@ -43,7 +44,9 @@ def hist(y_axis, Country1, Country2, Country3, Country4):
     plt.hist(world["Thailand(USD)"], density=True, alpha=0.8, label="TH")
     plt.xlabel("Gold price")
     plt.legend()
+    plt.savefig("hist.png")
     plt.show()
+
 
 #List of dataframes for box function
 countries = [world["United States(USD)"], world["Japan(USD)"], world["United Kingdom(USD)"], world["Thailand(USD)"]]
@@ -54,7 +57,9 @@ def box(countries):
     plt.figure()
     plt.boxplot([countries[0] , countries[1] , countries[2], countries[3]],labels=["US", "JP", "UK", "TH"])
     plt.ylabel("Gold Price in USD")
+    plt.savefig("box.png")
     plt.show()
+
 
 #Calling the functions for 3 plots
 lineplt("Date", "United States(USD)", "Japan(USD)", "United Kingdom(USD)", "Thailand(USD)")
