@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #File read into pandas dataframe
-world = pd.read_csv("E:/Herts/ADS1/Assignment 1/favas/1990-2021.csv")
+world = pd.read_csv("C:/Users/favas/Downloads/Assignment/1990-2021.csv")
 plt.figure()
 
 def rate_conversion(currency_name, conversion_multiplier):
